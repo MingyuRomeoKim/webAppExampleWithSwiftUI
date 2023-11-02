@@ -36,19 +36,16 @@ struct ToolbarView: View {
             
             Spacer()
             
-            NavigationLink(destination: SettingView(), isActive: $showSettings) {
+            NavigationLink(destination: SettingView().navigationBarHidden(true), isActive: $showSettings) {
                 Button(action: {
                     showSettings = true
                 }) {
                     Text("설정")
                 }
             }
-            
-            
         }
         .padding()
     }
-    
 }
 
 struct ToolbarView_Previews: PreviewProvider {
