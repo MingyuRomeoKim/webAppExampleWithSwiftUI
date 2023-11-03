@@ -15,3 +15,6 @@
 
 ### [웹개발자의 IOS 탐방기] 4. VStack HStack을사용하여설정창 UI 구현
 - [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/235/)
+
+### [웹개발자의 IOS 탐방기] 5. ListView를 사용한 알림 화면 구현
+- [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/259/)

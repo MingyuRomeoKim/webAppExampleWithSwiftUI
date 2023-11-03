@@ -18,6 +18,8 @@
 		5D1AFFA52AF0776400EB320B /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1AFFA42AF0776400EB320B /* WebViewModel.swift */; };
 		5D1AFFA72AF07AB900EB320B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1AFFA62AF07AB900EB320B /* Constants.swift */; };
 		5D1AFFA92AF1C21400EB320B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1AFFA82AF1C21400EB320B /* SettingView.swift */; };
+		5DBF86962AF46F6C00450B47 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF86952AF46F6C00450B47 /* AlarmView.swift */; };
+		5DBF86982AF46FE800450B47 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF86972AF46FE800450B47 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		5D1AFFA42AF0776400EB320B /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		5D1AFFA62AF07AB900EB320B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5D1AFFA82AF1C21400EB320B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5DBF86952AF46F6C00450B47 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		5DBF86972AF46FE800450B47 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				5D1AFFA12AF074C000EB320B /* ToolbarView.swift */,
 				5D1AFFA62AF07AB900EB320B /* Constants.swift */,
 				5D1AFFA82AF1C21400EB320B /* SettingView.swift */,
+				5DBF86952AF46F6C00450B47 /* AlarmView.swift */,
+				5DBF86972AF46FE800450B47 /* HeaderView.swift */,
 			);
 			path = webApp;
 			sourceTree = "<group>";
@@ -168,10 +174,12 @@
 			files = (
 				5D1AFF942AEF891200EB320B /* Persistence.swift in Sources */,
 				5D1AFFA02AEF89F200EB320B /* WebView.swift in Sources */,
+				5DBF86962AF46F6C00450B47 /* AlarmView.swift in Sources */,
 				5D1AFFA22AF074C000EB320B /* ToolbarView.swift in Sources */,
 				5D1AFFA92AF1C21400EB320B /* SettingView.swift in Sources */,
 				5D1AFF8D2AEF890E00EB320B /* ContentView.swift in Sources */,
 				5D1AFF972AEF891200EB320B /* webApp.xcdatamodeld in Sources */,
+				5DBF86982AF46FE800450B47 /* HeaderView.swift in Sources */,
 				5D1AFF8B2AEF890E00EB320B /* webAppApp.swift in Sources */,
 				5D1AFFA52AF0776400EB320B /* WebViewModel.swift in Sources */,
 				5D1AFFA72AF07AB900EB320B /* Constants.swift in Sources */,

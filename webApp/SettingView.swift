@@ -10,57 +10,45 @@ import SwiftUI
 struct SettingView: View {
     // 로그인 유무 관리용 변수
     @State private var isLogin = false
+    // NavigationLink의 활성화 상태를 관리하는 변수
+    @State private var isShowingAlarmView = false
+    // 사용자 정의 뒤로 가기 동작을 처리하기 위한 변수
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            // End Header
-            
-            // Content
-            ScrollView {
-                AccountManageView(isLogin: $isLogin)
-                    .padding(20)
-                Divider()
-                NotificationView()
-                    .padding(20)
-                Divider()
+        NavigationView {
+            VStack {
+                // Header
+                HeaderView(presentationMode: _presentationMode, isShowingAlarmView: $isShowingAlarmView,headerType: .setting)
+                // End Header
+                
+                // Content
+                ScrollView {
+                    AccountManageView(isLogin: $isLogin)
+                        .padding(20)
+                    Divider()
+                    NotificationView()
+                        .padding(20)
+                    Divider()
+                }
+                // End Content
             }
-            // End Content
+            .background(
+                ZStack {  // ZStack 사용으로 각 NavigationLink를 숨김 처리
+                    NavigationLink(destination: AlarmView(), isActive: $isShowingAlarmView) {
+                        EmptyView()
+                    }
+                }
+            )
         }
-        
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 #Preview {
     SettingView()
-}
-
-struct HeaderView: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
-    var body: some View {
-        HStack {
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }){
-                Image(systemName: "chevron.left")
-                    .font(.system(size: 26))
-                    .foregroundColor(.black)
-            }
-            Spacer()
-            Text("설정")
-                .font(.system(size: 26, weight: .heavy))
-                .frame(maxWidth: .infinity)
-            Spacer()
-            Spacer()
-        }.padding()
-        
-        Rectangle()
-            .fill(Color.black.opacity(0.05))
-            .frame(height: 4)
-            .edgesIgnoringSafeArea(.horizontal)
-    }
 }
 
 struct NotificationView: View {
