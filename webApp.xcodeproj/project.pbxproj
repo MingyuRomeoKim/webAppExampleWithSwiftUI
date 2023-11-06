@@ -20,6 +20,8 @@
 		5D1AFFA92AF1C21400EB320B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1AFFA82AF1C21400EB320B /* SettingView.swift */; };
 		5DBF86962AF46F6C00450B47 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF86952AF46F6C00450B47 /* AlarmView.swift */; };
 		5DBF86982AF46FE800450B47 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF86972AF46FE800450B47 /* HeaderView.swift */; };
+		5DBF869B2AF85BF700450B47 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF869A2AF85BF700450B47 /* NotificationManager.swift */; };
+		5DBF869D2AF85F6A00450B47 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF869C2AF85F6A00450B47 /* AlarmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		5D1AFFA82AF1C21400EB320B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		5DBF86952AF46F6C00450B47 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		5DBF86972AF46FE800450B47 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5DBF869A2AF85BF700450B47 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		5DBF869C2AF85F6A00450B47 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		5D1AFF892AEF890E00EB320B /* webApp */ = {
 			isa = PBXGroup;
 			children = (
+				5DBF86992AF85BD900450B47 /* Manager */,
 				5D1AFFA32AF0774B00EB320B /* ViewModel */,
 				5D1AFF8A2AEF890E00EB320B /* webAppApp.swift */,
 				5D1AFF8C2AEF890E00EB320B /* ContentView.swift */,
@@ -98,8 +103,17 @@
 			isa = PBXGroup;
 			children = (
 				5D1AFFA42AF0776400EB320B /* WebViewModel.swift */,
+				5DBF869C2AF85F6A00450B47 /* AlarmViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5DBF86992AF85BD900450B47 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF869A2AF85BF700450B47 /* NotificationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +190,10 @@
 				5D1AFFA02AEF89F200EB320B /* WebView.swift in Sources */,
 				5DBF86962AF46F6C00450B47 /* AlarmView.swift in Sources */,
 				5D1AFFA22AF074C000EB320B /* ToolbarView.swift in Sources */,
+				5DBF869D2AF85F6A00450B47 /* AlarmViewModel.swift in Sources */,
 				5D1AFFA92AF1C21400EB320B /* SettingView.swift in Sources */,
 				5D1AFF8D2AEF890E00EB320B /* ContentView.swift in Sources */,
+				5DBF869B2AF85BF700450B47 /* NotificationManager.swift in Sources */,
 				5D1AFF972AEF891200EB320B /* webApp.xcdatamodeld in Sources */,
 				5DBF86982AF46FE800450B47 /* HeaderView.swift in Sources */,
 				5D1AFF8B2AEF890E00EB320B /* webAppApp.swift in Sources */,

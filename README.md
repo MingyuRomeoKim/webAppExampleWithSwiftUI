@@ -18,3 +18,6 @@
 
 ### [웹개발자의 IOS 탐방기] 5. ListView를 사용한 알림 화면 구현
 - [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/259/)
+
+### [웹개발자의 IOS 탐방기] 6. UserNotifications을 사용한 알림 설정 구현
+- [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/275/)
