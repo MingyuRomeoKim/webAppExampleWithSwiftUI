@@ -21,3 +21,6 @@
 
 ### [웹개발자의 IOS 탐방기] 6. UserNotifications을 사용한 알림 설정 구현
 - [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/275/)
+
+### [웹개발자의 IOS 탐방기] 7. UserDefaults를 사용한 로컬기기에 알림 권한설정 값 저장하기
+- [**블로그 링크**](https://kimmingyu.co.kr/it/series/ios-exploration/281/)

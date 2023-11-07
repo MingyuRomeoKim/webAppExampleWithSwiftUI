@@ -22,6 +22,7 @@
 		5DBF86982AF46FE800450B47 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF86972AF46FE800450B47 /* HeaderView.swift */; };
 		5DBF869B2AF85BF700450B47 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF869A2AF85BF700450B47 /* NotificationManager.swift */; };
 		5DBF869D2AF85F6A00450B47 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF869C2AF85F6A00450B47 /* AlarmViewModel.swift */; };
+		5DBF86A02AF9B13300450B47 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF869F2AF9B13300450B47 /* UserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5DBF86972AF46FE800450B47 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5DBF869A2AF85BF700450B47 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		5DBF869C2AF85F6A00450B47 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		5DBF869F2AF9B13300450B47 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		5D1AFF892AEF890E00EB320B /* webApp */ = {
 			isa = PBXGroup;
 			children = (
+				5DBF869E2AF9B11900450B47 /* Helpers */,
 				5DBF86992AF85BD900450B47 /* Manager */,
 				5D1AFFA32AF0774B00EB320B /* ViewModel */,
 				5D1AFF8A2AEF890E00EB320B /* webAppApp.swift */,
@@ -114,6 +117,14 @@
 				5DBF869A2AF85BF700450B47 /* NotificationManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		5DBF869E2AF9B11900450B47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF869F2AF9B13300450B47 /* UserDefaultsKeys.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DBF86A02AF9B13300450B47 /* UserDefaultsKeys.swift in Sources */,
 				5D1AFF942AEF891200EB320B /* Persistence.swift in Sources */,
 				5D1AFFA02AEF89F200EB320B /* WebView.swift in Sources */,
 				5DBF86962AF46F6C00450B47 /* AlarmView.swift in Sources */,
@@ -340,6 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
