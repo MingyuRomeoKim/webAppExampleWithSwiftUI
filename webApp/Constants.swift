@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constants {
-    static let DOMAIN_PATH = "https://kimmingyu.co.kr/"
+    static let DOMAIN_PATH = "https://min-nine.tistory.com/"
 }
